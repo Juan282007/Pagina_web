@@ -19,9 +19,19 @@
 <main>
 
 <section>
-<h2>table</h2>
-<p>Define una tabla</p>
 
+<h2>table</h2>
+
+<p>Define una tabla en HTML.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;table&gt;
+Contenido
+&lt;/table&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <table border="1">
 <tr>
@@ -35,13 +45,29 @@
 </table>
 </div>
 
-<p>Uso correcto: organizar datos en filas y columnas</p>
+<h3>Explicación</h3>
+<p>Se usa para organizar información en filas y columnas.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Usar tablas solo para datos, no para diseño.</li>
+<li>Mantener estructura ordenada.</li>
+</ul>
+
 </section>
 
 <section>
-<h2>tr</h2>
-<p>Define una fila dentro de la tabla</p>
 
+<h2>tr</h2>
+
+<p>Define una fila dentro de la tabla.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;tr&gt;Fila&lt;/tr&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <table border="1">
 <tr>
@@ -50,13 +76,28 @@
 </table>
 </div>
 
-<p>Uso correcto: cada fila va dentro de table</p>
+<h3>Explicación</h3>
+<p>Cada fila agrupa celdas (td o th).</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Debe ir dentro de table.</li>
+</ul>
+
 </section>
 
 <section>
-<h2>td</h2>
-<p>Define una celda de datos</p>
 
+<h2>td</h2>
+
+<p>Define una celda de datos.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;td&gt;Dato&lt;/td&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <table border="1">
 <tr>
@@ -65,22 +106,82 @@
 </table>
 </div>
 
-<p>Uso correcto: va dentro de tr</p>
+<h3>Explicación</h3>
+<p>Contiene la información de la tabla.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Debe ir dentro de tr.</li>
+</ul>
+
 </section>
 
 <section>
-<h2>th</h2>
-<p>Define una celda de encabezado</p>
 
+<h2>th</h2>
+
+<p>Define una celda de encabezado.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;th&gt;Encabezado&lt;/th&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <table border="1">
 <tr>
-<th>Encabezado</th>
+<th>Nombre</th>
+<th>Edad</th>
 </tr>
 </table>
 </div>
 
-<p>Uso correcto: se usa en la primera fila como título de columna</p>
+<h3>Explicación</h3>
+<p>Se usa para los títulos de columnas o filas.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Usarlo en la primera fila.</li>
+<li>Facilita la lectura de la tabla.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>caption</h2>
+
+<p>Agrega un título a la tabla.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;caption&gt;Título&lt;/caption&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
+<div class="ejemplo">
+<table border="1">
+<caption>Lista de Estudiantes</caption>
+<tr>
+<th>Nombre</th>
+<th>Edad</th>
+</tr>
+<tr>
+<td>Ana</td>
+<td>19</td>
+</tr>
+</table>
+</div>
+
+<h3>Explicación</h3>
+<p>Describe el contenido de la tabla.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Usarlo para identificar la tabla.</li>
+</ul>
+
 </section>
 
 </main>

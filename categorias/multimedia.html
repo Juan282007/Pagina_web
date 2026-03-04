@@ -19,46 +19,107 @@
 <main>
 
 <section>
-<h2>img</h2>
-<p>Muestra una imagen</p>
 
+<h2>img</h2>
+
+<p>Muestra una imagen en la página web.</p>
+
+<h3>Sintaxis básica</h3>
 <div class="ejemplo">
-<img src="https://desarrolloweb.com/media/761/imagenes-html.jpg" alt="Imagen de ejemplo">
+&lt;img src="imagen.jpg" alt="Descripción"&gt;
 </div>
 
-<p>Uso correcto: siempre agregar el atributo alt</p>
+<h3>Ejemplo práctico</h3>
+<div class="ejemplo">
+<img src="https://desarrolloweb.com/media/761/imagenes-html.jpg" alt="Imagen de ejemplo" width="250">
+</div>
+
+<h3>Explicación</h3>
+<p>El atributo <strong>src</strong> indica la ruta de la imagen y 
+<strong>alt</strong> describe la imagen.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Siempre agregar el atributo alt.</li>
+<li>Optimizar el tamaño de la imagen.</li>
+</ul>
+
 </section>
 
 <section>
-<h2>audio</h2>
-<p>Reproduce sonido</p>
 
+<h2>audio</h2>
+
+<p>Permite reproducir sonido.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <audio controls>
-<source src="myinstants.mp3" type="audio/mpeg">
+<source src="herewego.mp3" type="audio/mpeg">
 </audio>
 </div>
 
-<p>Uso correcto: usar el atributo controls</p>
+<h3>Explicación</h3>
+<p>El atributo <strong>controls</strong> muestra los botones de reproducción.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Usar el formato correcto (mp3).</li>
+<li>Siempre incluir controls.</li>
+</ul>
+
 </section>
 
 <section>
-<h2>video</h2>
-<p>Reproduce video</p>
 
+<h2>video</h2>
+
+<p>Permite reproducir videos.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;video controls&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <video width="250" controls>
 <source src="Rick_Roll.mp4" type="video/mp4">
 </video>
 </div>
 
-<p>Uso correcto: definir tamaño y usar controls</p>
+<h3>Explicación</h3>
+<p>Se puede definir el tamaño con width y usar controls para mostrar los botones.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Usar formato mp4 para mayor compatibilidad.</li>
+<li>Definir tamaño adecuado.</li>
+</ul>
+
 </section>
 
 <section>
-<h2>iframe</h2>
-<p>Permite mostrar otra página dentro del sitio web</p>
 
+<h2>iframe</h2>
+
+<p>Permite mostrar otra página o contenido externo dentro del sitio.</p>
+
+<h3>Sintaxis básica</h3>
+<div class="ejemplo">
+&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 <div class="ejemplo">
 <iframe 
 src="../index.html" 
@@ -67,7 +128,15 @@ height="150">
 </iframe>
 </div>
 
-<p>Uso correcto: insertar mapas, videos o contenido externo</p>
+<h3>Explicación</h3>
+<p>Se usa para insertar mapas, videos o páginas externas.</p>
+
+<h3>Buenas prácticas</h3>
+<ul>
+<li>Definir width y height.</li>
+<li>Usarlo solo cuando sea necesario.</li>
+</ul>
+
 </section>
 
 </main>
