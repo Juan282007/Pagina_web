@@ -1,25 +1,21 @@
+/* Estilos generales de toda la página */
 body {
     font-family: Arial;
     margin: 0;
     background-color: #f4f4f4;
 }
 
+/* Centra el título principal del blog */
 h1{
     text-align: center;
 }
 
-h2{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
+/* centra menu de navegación*/
 nav{
     text-align: center;
 }
 
+/* Estilos del encabezado del blog */
 header {
     background-color: #2c3e50;
     color: white;
@@ -27,44 +23,51 @@ header {
     text-align: left;
 }
 
+/* Quita los puntos de las listas del menú */
 nav ul {
     list-style: none;
     padding: 0;
 }
-/*separación de categorias*/
+
+/*separación entre cada categorias del menu*/
 nav ul li {
     display: inline;
     margin-right: 30px;
 }
 
-/*separación de cada etiqueta por categoria*/
+/* Estilo de los enlaces del menú */
 nav a {
     color: white;
     text-decoration: none;
     margin-right: 30px;
 }
 
+/* Tamaño de letra de los enlaces */
 a{
     font-size: 20px;
     text-align: center;
 }
 
+/* Estilo del contenido central de la página */
 main {
     padding: 20px;
     background-color: white;
     margin: 20px;
 }
 
+/* Separación entre cada sección del blog */
 section {
     margin-bottom: 30px;
 }
 
+/* Caja donde se muestran los ejemplos de código */
 .ejemplo {
     background-color: #3b8ea3;
     padding: 10px;
     border-left: 5px solid #c7cf29;
 }
 
+/* Estilos del footer o pie de página */
 footer {
     background-color: #2c3e50;
     color: white;
