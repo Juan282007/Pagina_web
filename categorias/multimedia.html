@@ -2,161 +2,155 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Multimedia</title>
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
 <header class="navbar">
-<div class="logo">
-<h1>Blog Educativo de Etiquetas HTML</h1>
-
-<nav>
-
-<ul>
-
-<li><a href="../index.html">Inicio</a></li>
-<li><a href="estructurales.html">Estructurales</a></li>
-<li><a href="texto.html">Texto</a></li>
-<li><a href="listas.html">Listas</a></li>
-<li><a href="formularios.html">Formularios</a></li>
-<li><a href="tablas.html">Tablas</a></li>
-<li><a href="multimedia.html">Multimedia</a></li>
-
-</ul>
-
-</nav>
-
+    <div class="logo">
+        <h1>Blog Educativo de Etiquetas HTML</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="estructurales.html">Estructurales</a></li>
+            <li><a href="texto.html">Texto</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="formularios.html">Formularios</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
 <section>
+    <h2>Imagen (img)</h2>
+    <p>Permite mostrar una imagen en la página web.</p>
 
-<h2>img</h2>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;img src="imagen.jpg" alt="Descripción"&gt;
+    </div>
 
-<p>Muestra una imagen en la página web.</p>
-
-<h3>Sintaxis básica</h3>
+    <h3>Ejemplo práctico</h3>
 <div class="ejemplo">
-&lt;img src="imagen.jpg" alt="Descripción"&gt;
+    <img 
+        src="https://desarrolloweb.com/media/761/imagenes-html.jpg" 
+        alt="Imagen de ejemplo" 
+        style="max-width:100%; height:auto; display:block; margin:0 auto;">
 </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<img src="https://desarrolloweb.com/media/761/imagenes-html.jpg" alt="Imagen de ejemplo" width="250">
-</div>
+    <h3>Explicación</h3>
+    <p>El atributo <strong>src</strong> indica la ruta de la imagen y <strong>alt</strong> describe la imagen para accesibilidad y SEO.</p>
 
-<h3>Explicación</h3>
-<p>El atributo <strong>src</strong> indica la ruta de la imagen y 
-<strong>alt</strong> describe la imagen.</p>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Siempre agregar el atributo alt.</li>
-<li>Optimizar el tamaño de la imagen.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Siempre agregar el atributo alt.</li>
+        <li>Optimizar el tamaño de la imagen para mejorar la carga de la página.</li>
+        <li>Usar formatos compatibles como jpg, png o webp.</li>
+    </ul>
 </section>
 
 <section>
+    <h2>Audio</h2>
+    <p>Permite reproducir sonido en la página web.</p>
 
-<h2>audio</h2>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;audio controls&gt;<br>
+        &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+        &lt;/audio&gt;
+    </div>
 
-<p>Permite reproducir sonido.</p>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <audio controls>
+            <source src="../media/herewego.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
 
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;audio controls&gt;
-&lt;source src="audio.mp3" type="audio/mpeg"&gt;
-&lt;/audio&gt;
-</div>
+    <h3>Explicación</h3>
+    <p>El atributo <strong>controls</strong> agrega botones para reproducir, pausar y controlar el volumen.</p>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<audio controls>
-<source src="herewego.mp3" type="audio/mpeg">
-</audio>
-</div>
-
-<h3>Explicación</h3>
-<p>El atributo <strong>controls</strong> muestra los botones de reproducción.</p>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Usar el formato correcto (mp3).</li>
-<li>Siempre incluir controls.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar el formato correcto (mp3 o ogg) para compatibilidad.</li>
+        <li>Siempre incluir controls para que el usuario pueda reproducir el audio.</li>
+        <li>Proporcionar texto alternativo o transcripción si el audio es importante.</li>
+    </ul>
 </section>
 
 <section>
+    <h2>Video</h2>
+    <p>Permite reproducir videos en la página web.</p>
 
-<h2>video</h2>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;video controls&gt;<br>
+        &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+        &lt;/video&gt;
+    </div>
 
-<p>Permite reproducir videos.</p>
-
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;video controls&gt;
-&lt;source src="video.mp4" type="video/mp4"&gt;
-&lt;/video&gt;
-</div>
-
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<video width="250" controls>
-<source src="Rick_Roll.mp4" type="video/mp4">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <video width="250" controls>
+    <source src="../media/Rick_Roll.mp4" type="video/mp4">
+    
 </video>
-</div>
+    </div>
 
-<h3>Explicación</h3>
-<p>Se puede definir el tamaño con <strong>width</strong> y usar 
-<strong>controls</strong> para mostrar los botones.</p>
+    <h3>Explicación</h3>
+    <p>Se puede definir el tamaño con <strong>width</strong> y usar <strong>controls</strong> para mostrar los botones de reproducción.</p>
 
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Usar formato mp4 para mayor compatibilidad.</li>
-<li>Definir tamaño adecuado.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar formato mp4 para mayor compatibilidad con navegadores.</li>
+        <li>Definir tamaño adecuado y proporción correcta.</li>
+        <li>Incluir subtítulos con <code>&lt;track&gt;</code> para accesibilidad.</li>
+    </ul>
 </section>
 
 <section>
+    <h2>Iframe</h2>
+    <p>Permite mostrar otra página o contenido externo dentro del sitio.</p>
 
-<h2>iframe</h2>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;
+    </div>
 
-<p>Permite mostrar otra página o contenido externo dentro del sitio.</p>
-
-<h3>Sintaxis básica</h3>
+   <h3>Ejemplo práctico</h3>
 <div class="ejemplo">
-&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;
+    <iframe 
+        src="../Index.html" 
+        width="100%" 
+        height="400" 
+        title="Página de ejemplo"
+        style="border:1px solid #ccc; overflow:auto;">
+    </iframe>
 </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<iframe 
-src="../index.html" 
-width="250" 
-height="150">
-</iframe>
-</div>
+    <h3>Explicación</h3>
+    <p>Se usa para insertar mapas, videos, documentos o páginas externas. El atributo <strong>title</strong> ayuda a los lectores de pantalla.</p>
 
-<h3>Explicación</h3>
-<p>Se usa para insertar mapas, videos o páginas externas.</p>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Definir width y height.</li>
-<li>Usarlo solo cuando sea necesario.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Definir width y height para mantener proporciones y diseño.</li>
+        <li>Usarlo solo cuando sea necesario para contenido externo.</li>
+        <li>Agregar atributo <strong>title</strong> para accesibilidad.</li>
+        <li>Evitar el uso excesivo de iframes por temas de seguridad y SEO.</li>
+    </ul>
 </section>
 
 </main>
 
 <footer>
-<p>Proyecto educativo SENA - 2026</p>
+    <p>Proyecto educativo SENA - 2026</p>
 </footer>
 
 <script src="/js/ejemplo.js"></script>
