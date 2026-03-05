@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
-
-    alert("Bienvenido al Blog Educativo de Etiquetas HTML");
-
-});
+if (!localStorage.getItem("alertMostrado")) {
+    alert("Bienvenido al Blog Educativo HTML");
+    localStorage.setItem("alertMostrado", "true");
+}
