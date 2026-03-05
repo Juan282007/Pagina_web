@@ -7,15 +7,15 @@
 </head>
 <body>
 
-<header>
-<h1>Etiquetas de Texto</h1>
+<header class="navbar">
+<div class="logo">
+<h1>Blog Educativo de Etiquetas HTML</h1>
 
 <nav>
 
 <ul>
 
 <li><a href="../index.html">Inicio</a></li>
-
 <li><a href="estructurales.html">Estructurales</a></li>
 <li><a href="texto.html">Texto</a></li>
 <li><a href="listas.html">Listas</a></li>
@@ -36,7 +36,7 @@
 <h2>&lt;p&gt;</h2>
 
 <h3>Definición</h3>
-<p>La etiqueta p se usa para crear párrafos.</p>
+<ul>La etiqueta p se usa para crear párrafos.</ul>
 
 <h3>Sintaxis</h3>
 
@@ -65,17 +65,25 @@ Se usa para organizar el contenido en bloques de texto.
 
 <section>
 
-<h2>&lt;strong&gt;</h2>
+<h2>strong</h2>
 
 <h3>Definición</h3>
 
-<p>Se usa para dar importancia al texto.</p>
+<ul>Se usa para dar importancia al texto.</ul>
 
-<h3>Ejemplo</h3>
+<h3>Sintaxis</h3>
+
+<div class="ejemplo">
+&lt;p&gt;Texto con &lt;strong&gt;énfasis fuerte&lt;/strong&gt;&lt;/p&gt;
+</div>
+
+<h3>Ejemplo práctico</h3>
 
 <div class="ejemplo">
 <p>Este texto es <strong>importante</strong></p>
 </div>
+
+<p>Establecer una importancia a una palabra o fragmento de texto que consideremos importante.</p>
 
 <h3>Buenas prácticas</h3>
 <ul><li>No usar solo para negrita visual.</li></ul>
@@ -86,15 +94,16 @@ Se usa para organizar el contenido en bloques de texto.
 <section>
 <h2>h1</h2>
 <h3>Definición</h3>
-<p>Encabezado principal.</p>
+<ul>Encabezado principal.</ul>
 
 <h3>Sintaxis</h3>
-<div class="ejemplo">&lt;h1&gt;Título&lt;/h1&gt;</div>
+<div class="ejemplo"
+>&lt;h1&gt;Título&lt;/h1&gt;
+</div>
 
 <h3>Ejemplo</h3>
 <div class="ejemplo"><h1>Título Principal</h1></div>
 
-<h3>Explicación</h3>
 <p>Debe haber solo un h1 principal por página.</p>
 
 <h3>Buenas prácticas</h3>
@@ -103,7 +112,7 @@ Se usa para organizar el contenido en bloques de texto.
 
 </main>
 
-<script src="Js/ejemplo.js"></script>
+<script src="/js/ejemplo.js"></script>
 
 </body>
 </html>

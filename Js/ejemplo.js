@@ -1,17 +1,22 @@
-if (!sessionStorage.getItem("inicioVisitado")) {
-    alert("Bienvenido al Blog Educativo HTML");
-    sessionStorage.setItem("inicioVisitado", "true");
+// obtener la página actual
+let pagina = window.location.pathname.split("/").pop();
+
+// si está vacío significa que es index
+if (pagina === "") {
+    pagina = "index.html";
 }
 
+// seleccionar todos los enlaces del menú
+let enlaces = document.querySelectorAll("nav a");
 
-let menu = document.querySelectorAll(".menu");
+// recorrer los enlaces
+enlaces.forEach(function(enlace){
 
-menu.forEach(opcion => {
-    opcion.addEventListener("mouseover", function(){
-        this.style.color = "#ADD8E6";
-    });
+    let link = enlace.getAttribute("href");
 
-    opcion.addEventListener("mouseout", function(){
-        this.style.color = "#ffffff";
-    });
+    // comparar con la página actual
+    if(link.includes(pagina)){
+        enlace.classList.add("activo");
+    }
+
 });
