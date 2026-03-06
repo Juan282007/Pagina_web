@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tablas</title>
+<link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
 
 <header class="navbar">
-
     <div class="logo">
         <h1>Blog Educativo de Etiquetas HTML</h1>
     </div>
-
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -26,311 +24,287 @@
             <li><a href="multimedia.html">Multimedia</a></li>
         </ul>
     </nav>
-
 </header>
 
 
 <main>
 
 <section>
+    <h2>Contenedor de datos tabulares (table)</h2>
+    <p>Elemento que crea una estructura de tabla con filas y columnas.</p>
 
-<h2>Contenedor de datos tabulares (table)</h2>
-<p>Elemento que crea una estructura de tabla con filas y columnas.</p>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;table&gt;Contenido de la tabla&lt;/table&gt;
+    </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;table&gt;Contenido de la tabla&lt;/table&gt;
-</div>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-
-<table border="1">
-<tr>
-<th>Nombre</th>
-<th>Edad</th>
-</tr>
-
-<tr>
-<td>Juan</td>
-<td>20</td>
-</tr>
-
-</table>
-
-</div>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Usar tablas solo para datos y no para diseño.</li>
-<li>Agregar caption para describir la tabla.</li>
-<li>Usar thead, tbody y tfoot para estructurar la tabla.</li>
-<li>Evitar atributos de presentación como border, usar CSS.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar tablas solo para datos y no para diseño.</li>
+        <li>Agregar caption para describir la tabla.</li>
+        <li>Usar thead, tbody y tfoot para estructurar la tabla.</li>
+        <li>Evitar atributos de presentación como border, usar CSS en su lugar.</li>
+    </ul>
 </section>
 
 
 
 <section>
+    <h2>Fila de tabla (tr)</h2>
+    <p>Elemento que representa una fila dentro de una tabla.</p>
 
-<h2>Fila de tabla (tr)</h2>
-<p>Elemento que representa una fila dentro de una tabla.</p>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;tr&gt;Contenido de la fila&lt;/tr&gt;
+    </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;tr&gt;Contenido de la fila&lt;/tr&gt;
-</div>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <tr>
+                <td>Fila 1</td>
+                <td>Fila 1 columna 2</td>
+            </tr>
+        </table>
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-
-<table border="1">
-
-<tr>
-<td>Fila 1</td>
-<td>Fila 1 columna 2</td>
-</tr>
-
-</table>
-
-</div>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Debe utilizarse dentro de table, thead, tbody o tfoot.</li>
-<li>Todas las filas deberían tener el mismo número de columnas.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Debe utilizarse dentro de table, thead, tbody o tfoot.</li>
+        <li>Asegurarse de que todas las filas tengan el mismo número de celdas por accesibilidad.</li>
+    </ul>
 </section>
 
 
 
 <section>
+    <h2>Celda de datos (td)</h2>
+    <p>Elemento que contiene información dentro de una tabla.</p>
 
-<h2>Celda de datos (td)</h2>
-<p>Elemento que contiene información dentro de una tabla.</p>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;td&gt;Dato&lt;/td&gt;
+    </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;td&gt;Dato&lt;/td&gt;
-</div>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <tr>
+                <td>Producto</td>
+                <td>Precio</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>$20</td>
+            </tr>
+        </table>
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-
-<table border="1">
-
-<tr>
-<td>Producto</td>
-<td>Precio</td>
-</tr>
-
-<tr>
-<td>Mouse</td>
-<td>$20</td>
-</tr>
-
-</table>
-
-</div>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Debe ir dentro de una fila tr.</li>
-<li>Evitar celdas vacías.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Debe ir dentro de una fila tr.</li>
+        <li>Evitar celdas vacías; si es necesario, usar &nbsp;.</li>
+        <li>Usar scope en th para accesibilidad.</li>
+    </ul>
 </section>
 
 
 
 <section>
+    <h2>Celda de encabezado (th)</h2>
+    <p>Elemento que define el título de una columna o fila.</p>
 
-<h2>Celda de encabezado (th)</h2>
-<p>Elemento que define el título de una columna o fila.</p>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;th&gt;Encabezado&lt;/th&gt;
+    </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;th&gt;Encabezado&lt;/th&gt;
-</div>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>19</td>
+                <td>Neiva</td>
+            </tr>
+        </table>
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-
-<table border="1">
-
-<tr>
-<th>Nombre</th>
-<th>Edad</th>
-<th>Ciudad</th>
-</tr>
-
-<tr>
-<td>Ana</td>
-<td>19</td>
-<td>Neiva</td>
-</tr>
-
-</table>
-
-</div>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Usarlo en encabezados de filas o columnas.</li>
-<li>Se puede usar <strong>scope</strong> para accesibilidad.</li>
-</ul>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usarlo en la primera fila o columna para identificar datos.</li>
+        <li>Agregar scope="col" o scope="row" para accesibilidad.</li>
+        <li>Evitar usar th solo por negrita; usar CSS para estilos.</li>
+    </ul>
 </section>
 
 
 
 <section>
+    <h2>Título descriptivo de tabla (caption)</h2>
+    <p>Elemento que agrega un título o descripción a la tabla.</p>
 
-<h2>Título descriptivo de tabla (caption)</h2>
-<p>Elemento que agrega un título o descripción a la tabla.</p>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;caption&gt;Título de la tabla&lt;/caption&gt;
+    </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;caption&gt;Título de la tabla&lt;/caption&gt;
-</div>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <caption>Lista de Estudiantes</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>19</td>
+            </tr>
+        </table>
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-
-<table border="1">
-
-<caption>Lista de Estudiantes</caption>
-
-<tr>
-<th>Nombre</th>
-<th>Edad</th>
-</tr>
-
-<tr>
-<td>Ana</td>
-<td>19</td>
-</tr>
-
-</table>
-
-</div>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Colocarlo inmediatamente después de table.</li>
+        <li>Describir claramente el contenido de la tabla para usuarios y lectores de pantalla.</li>
+    </ul>
 </section>
 
-
-
 <section>
+    <h2>Encabezado estructural de tabla (thead)</h2>
+    <p>Elemento que agrupa las filas de encabezado de la tabla.</p>
 
-<h2>Encabezado estructural de tabla (thead)</h2>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Título&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+    </div>
 
-<div class="ejemplo">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Teclado</td>
+                    <td>$30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<table border="1">
-
-<thead>
-<tr>
-<th>Producto</th>
-<th>Precio</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Teclado</td>
-<td>$30</td>
-</tr>
-</tbody>
-
-</table>
-
-</div>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Siempre usar thead para separar el encabezado del cuerpo.</li>
+        <li>Usar th dentro de thead con scope.</li>
+    </ul>
 </section>
 
-
-
 <section>
+    <h2>Cuerpo de la tabla (tbody)</h2>
+    <p>Elemento que agrupa las filas con datos principales.</p>
 
-<h2>Cuerpo de la tabla (tbody)</h2>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;tbody&gt;&lt;tr&gt;Datos&lt;/tr&gt;&lt;/tbody&gt;
+    </div>
 
-<div class="ejemplo">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>Libro</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Cuaderno</td>
+                    <td>$5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<table border="1">
-
-<tbody>
-
-<tr>
-<td>Libro</td>
-<td>$10</td>
-</tr>
-
-<tr>
-<td>Cuaderno</td>
-<td>$5</td>
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Separar claramente el cuerpo de los encabezados.</li>
+        <li>Usar tbody aunque la tabla no tenga thead para consistencia.</li>
+    </ul>
 </section>
 
-
-
 <section>
+    <h2>Pie de tabla (tfoot)</h2>
+    <p>Elemento que define la parte final de la tabla, usualmente para totales o resúmenes.</p>
 
-<h2>Pie de tabla (tfoot)</h2>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;tfoot&gt;&lt;tr&gt;Resumen&lt;/tr&gt;&lt;/tfoot&gt;
+    </div>
 
-<div class="ejemplo">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto A</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Producto B</td>
+                    <td>$15</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>$35</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
-<table border="1">
-
-<thead>
-<tr>
-<th>Producto</th>
-<th>Precio</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>Producto A</td>
-<td>$20</td>
-</tr>
-
-<tr>
-<td>Producto B</td>
-<td>$15</td>
-</tr>
-
-</tbody>
-
-<tfoot>
-
-<tr>
-<td>Total</td>
-<td>$35</td>
-</tr>
-
-</tfoot>
-
-</table>
-
-</div>
-
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar tfoot para totales o notas finales.</li>
+        <li>Colocarlo antes de tbody en HTML si se desea que los navegadores lo rendericen al final.</li>
+        <li>Agregar scope y accesibilidad para celdas resumen.</li>
+    </ul>
 </section>
 
 </main>
 
-
-
 <footer>
-<p>Proyecto educativo SENA - 2026</p>
+    <p>Proyecto educativo SENA - 2026</p>
 </footer>
 
 <script src="../js/ejemplo.js"></script>
