@@ -11,19 +11,21 @@
 
 <header class="navbar">
 
-<nav>
-<ul>
+    <div class="logo">
+        <h1>Blog Educativo de Etiquetas HTML</h1>
+    </div>
 
-<li><a href="../index.html">Inicio</a></li>
-<li><a href="estructurales.html">Estructurales</a></li>
-<li><a href="texto.html">Texto</a></li>
-<li><a href="listas.html">Listas</a></li>
-<li><a href="formularios.html">Formularios</a></li>
-<li><a href="tablas.html">Tablas</a></li>
-<li><a href="multimedia.html">Multimedia</a></li>
-
-</ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="estructurales.html">Estructurales</a></li>
+            <li><a href="texto.html">Texto</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="formularios.html">Formularios</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+        </ul>
+    </nav>
 
 </header>
 
@@ -31,161 +33,155 @@
 
 <section>
 
-<h2>Contenedor de formulario (form)</h2>
+    <h2>Contenedor de formulario (form)</h2>
 
-<ul>Elemento que agrupa todos los campos para enviar información del usuario.</ul>
+    <p>Elemento que agrupa todos los campos para enviar información del usuario.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;form&gt;Contenido del formulario&lt;/form&gt;
-</div>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;form&gt;Contenido del formulario&lt;/form&gt;
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<form>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <form>
 
-Nombre:<br>
-<input type="text"><br><br>
+            Nombre:<br>
+            <input type="text"><br><br>
 
-Correo:<br>
-<input type="email"><br><br>
+            Correo:<br>
+            <input type="email"><br><br>
 
-<button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
 
-</form>
-</div>
+        </form>
+    </div>
 
-<p>El formulario permite recolectar datos que pueden enviarse a un servidor.</p>
+    <p>El formulario permite recolectar datos que pueden enviarse a un servidor.</p>
 
-<h3>Buenas prácticas</h3>
-<ul>
-Usar atributos <strong>action</strong> y <strong>method</strong> cuando se envían datos.
-</ul>
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar atributos <strong>action</strong> y <strong>method</strong> cuando se envían datos.</li>
+    </ul>
 
 </section>
-
 
 <section>
 
-<h2>Campo de entrada de datos (input)</h2>
+    <h2>Campo de entrada de datos (input)</h2>
 
-<ul>Elemento que permite al usuario ingresar diferentes tipos de datos.</ul>
+    <p>Elemento que permite al usuario ingresar diferentes tipos de datos.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;input type="tipo"&gt;
-</div>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;input type="tipo"&gt;
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
 
-<form>
+        <form>
 
-Texto:<br>
-<input type="text" placeholder="Escribe tu nombre"><br><br>
+            Texto:<br>
+            <input type="text" placeholder="Escribe tu nombre"><br><br>
 
-Correo:<br>
-<input type="email" placeholder="correo@ejemplo.com"><br><br>
+            Correo:<br>
+            <input type="email" placeholder="correo@ejemplo.com"><br><br>
 
-Contraseña:<br>
-<input type="password"><br><br>
+            Contraseña:<br>
+            <input type="password"><br><br>
 
-Número:<br>
-<input type="number"><br><br>
+            Número:<br>
+            <input type="number"><br><br>
 
-Fecha:<br>
-<input type="date"><br><br>
+            Fecha:<br>
+            <input type="date"><br><br>
 
-Color:<br>
-<input type="color"><br><br>
+            Color:<br>
+            <input type="color"><br><br>
 
-Archivo:<br>
-<input type="file"><br><br>
+            Archivo:<br>
+            <input type="file"><br><br>
 
-Opción única:<br>
-<input type="radio" name="opcion"> Opción 1
-<input type="radio" name="opcion"> Opción 2
-<br><br>
+            Opción única:<br>
+            <input type="radio" name="opcion"> Opción 1
+            <input type="radio" name="opcion"> Opción 2
+            <br><br>
 
-Seleccionar opción:<br>
-<input type="checkbox"> Aceptar términos
-<br><br>
+            Seleccionar opción:<br>
+            <input type="checkbox"> Aceptar términos
+            <br><br>
 
-</form>
+        </form>
 
-</div>
+    </div>
 
-<p>El atributo <strong>type</strong> define qué tipo de dato puede ingresar el usuario.</p>
+    <p>El atributo <strong>type</strong> define qué tipo de dato puede ingresar el usuario.</p>
 
-<h3>Buenas prácticas</h3>
-<ul>
-Elegir el tipo de input correcto para validar mejor los datos.
-</ul>
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Elegir el tipo de input correcto para validar mejor los datos.</li>
+    </ul>
 
 </section>
-
 
 <section>
 
-<h2>Área de texto largo (textarea)</h2>
+    <h2>Área de texto largo (textarea)</h2>
 
-<ul>Campo que permite escribir textos largos como comentarios o mensajes.</ul>
+    <p>Campo que permite escribir textos largos como comentarios o mensajes.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;textarea&gt;&lt;/textarea&gt;
-</div>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;textarea&gt;&lt;/textarea&gt;
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <textarea rows="4" cols="30" placeholder="Escribe tu mensaje"></textarea>
+    </div>
 
-<textarea rows="4" cols="30" placeholder="Escribe tu mensaje"></textarea>
+    <p>Se utiliza cuando el usuario necesita escribir más información.</p>
 
-</div>
-
-<p>Se utiliza cuando el usuario necesita escribir más información.</p>
-
-<h3>Buenas prácticas</h3>
-<ul>
-Usar atributos como <strong>rows</strong>, <strong>cols</strong> o <strong>maxlength</strong>.
-</ul>
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar atributos como <strong>rows</strong>, <strong>cols</strong> o <strong>maxlength</strong>.</li>
+    </ul>
 
 </section>
-
 
 <section>
 
-<h2>Botón de acción (button)</h2>
+    <h2>Botón de acción (button)</h2>
 
-<ul>Elemento que ejecuta acciones dentro del formulario.</ul>
+    <p>Elemento que ejecuta acciones dentro del formulario.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;button type="tipo"&gt;Texto&lt;/button&gt;
-</div>
+    <h3>Sintaxis</h3>
+    <div class="ejemplo">
+        &lt;button type="tipo"&gt;Texto&lt;/button&gt;
+    </div>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
 
-<button type="submit">Enviar</button>
+        <button type="submit">Enviar</button>
 
-<button type="reset">Limpiar</button>
+        <button type="reset">Limpiar</button>
 
-<button type="button" onclick="alert('Hola usuario')">
-Botón que saluda
-</button>
+        <button type="button" onclick="alert('Hola usuario')">
+            Botón que saluda
+        </button>
 
-</div>
+    </div>
 
-<p>El atributo <strong>type</strong> define el comportamiento del botón.</p>
+    <p>El atributo <strong>type</strong> define el comportamiento del botón.</p>
 
-<h3>Buenas prácticas</h3>
-<ul>
-Usar texto claro para indicar la acción del botón.
-</ul>
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar texto claro para indicar la acción del botón.</li>
+    </ul>
 
 </section>
-
 
 </main>
 
