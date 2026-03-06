@@ -1,168 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Estructurales</title>
-<link rel="stylesheet" href="../css/estilos.css">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Estructurales</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
 
-<header class="navbar">
-<div class="logo">
-<h1>Blog Educativo de Etiquetas HTML</h1>
+    <header class="navbar">
 
-<nav>
+        <div class="logo">
+            <h1>Blog Educativo de Etiquetas HTML</h1>
+        </div>
 
-<ul>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="estructurales.html">Estructurales</a></li>
+                <li><a href="texto.html">Texto</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
 
-<li><a href="../index.html">Inicio</a></li>
-<li><a href="estructurales.html">Estructurales</a></li>
-<li><a href="texto.html">Texto</a></li>
-<li><a href="listas.html">Listas</a></li>
-<li><a href="formularios.html">Formularios</a></li>
-<li><a href="tablas.html">Tablas</a></li>
-<li><a href="multimedia.html">Multimedia</a></li>
+    </header>
 
-</ul>
+    <main>
 
-</nav>
+        
 
-</header>
+        <section>
 
-<main>
+            <h2>header</h2>
 
-<section>
+            <p>Define el encabezado de la página.</p>
 
-<h2>header</h2>
+            <h3>Sintaxis</h3>
+            <div class="ejemplo">
+                &lt;header&gt;Contenido del encabezado&lt;/header&gt;
+            </div>
 
-<ul>Define el encabezado de la página</ul>
+            <h3>Ejemplo práctico</h3>
+            <div class="ejemplo">
+                <img src="/imagenes/header.png" alt="Ejemplo de header">
+            </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;header&gt;Contenido del encabezado&lt;/header&gt;
-</div>
+            <p>Uso correcto: se usa para colocar el logo, título o menú principal.</p>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<img src="/imagenes/header.png" alt="Ejemplo">
-</div>
+            <h3>Buenas prácticas</h3>
+            <ul>
+                <li>No usarlo solo como contenedor visual. Debe contener información introductoria.</li>
+            </ul>
 
-<p>Uso correcto: Se usa para colocar el logo, título o menú principal.</p>
+        </section>
 
-<h3>Buenas prácticas</h3>
-<ul>
-No usarlo solo como contenedor visual. Debe contener información introductoria.
-</ul>
+        <section>
 
-</section>
+            <h2>nav</h2>
 
-<section>
+            <p>Define el menú de navegación.</p>
 
-<h2>nav</h2>
+            <h3>Sintaxis</h3>
+            <div class="ejemplo">
+                &lt;nav&gt;Enlaces&lt;/nav&gt;
+            </div>
 
-<ul>Define el menú de navegación</ul>
+            <h3>Ejemplo práctico</h3>
+            <div class="ejemplo">
+                <nav>
+                    <a href="#">Inicio</a> |
+                    <a href="#">Estructurales</a>
+                </nav>
+            </div>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;nav&gt;Enlaces&lt;/nav&gt;
-</div>
+            <p>Se usa para menús principales o secundarios.</p>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
+            <h3>Buenas prácticas</h3>
+            <ul>
+                <li>Usar solo para enlaces importantes.</li>
+            </ul>
 
-<nav>
-<a href="#">Inicio</a> |
-<a href="#">Contacto</a>
-</nav>
-</div>
+        </section>
 
-<p>Se usa para menús principales o secundarios.</p>
+        <section>
 
-<h3>Buenas prácticas</h3>
-<ul>
-Usar solo para enlaces importantes.
-</ul>
+            <h2>main</h2>
 
-</section>
+            <p>Representa el contenido principal del documento.</p>
 
-<section>
+            <h3>Sintaxis</h3>
+            <div class="ejemplo">
+                &lt;main&gt;Contenido principal&lt;/main&gt;
+            </div>
 
-<h2>main</h2>
+            <h3>Ejemplo práctico</h3>
+            <div class="ejemplo">
+                <p>Zona principal de la página</p>
+            </div>
 
-<ul>Representa el contenido principal del documento</ul>
+            <p>Debe existir solo una vez por página.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;main&gt;Contenido principal&lt;/main&gt;
-</div>
+            <h3>Buenas prácticas</h3>
+            <ul>
+                <li>No incluir contenido repetido.</li>
+            </ul>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<p>Zona principal de la página</p>
-</div>
+        </section>
 
-<p>Debe existir solo una vez por página.</p>
+        <section>
 
-<h3>Buenas prácticas</h3>
-<ul>
-No incluir contenido repetido.
-</ul>
+            <h2>section</h2>
 
-</section>
+            <p>Agrupa contenido relacionado.</p>
 
-<section>
+            <h3>Sintaxis</h3>
+            <div class="ejemplo">
+                &lt;section&gt;Contenido&lt;/section&gt;
+            </div>
 
-<h2>section</h2>
+            <h3>Ejemplo</h3>
+            <div class="ejemplo">
+                <section>Sección informativa</section>
+            </div>
 
-<ul>Agrupar contenido</ul>
+            <p>Divide el contenido por temas.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;section&gt;Contenido&lt;/section&gt;
-</div>
+            <h3>Buenas prácticas</h3>
+            <ul>
+                <li>Debe contener un encabezado.</li>
+            </ul>
 
-<h3>Ejemplo</h3>
-<div class="ejemplo">
-<section>Sección informativa</section>
-</div>
+        </section>
 
-<p>Divide el contenido por temas.</p>
+        <section>
 
-<h3>Buenas prácticas</h3>
-<ul>
-Debe contener encabezado
-</ul>
+            <h2>footer</h2>
 
-</section>
+            <p>Define el pie de página.</p>
 
-<section>
+            <h3>Sintaxis</h3>
+            <div class="ejemplo">
+                &lt;footer&gt;Pie&lt;/footer&gt;
+            </div>
 
-<h2>footer</h2>
+            <h3>Ejemplo</h3>
+            <div class="ejemplo">
+                <footer>Pie</footer>
+            </div>
 
-<ul>Pie de página</ul>
+            <p>Contiene información final.</p>
 
-<h3>Sintaxis</h3>
-<div class="ejemplo">
-&lt;footer&gt;Pie&lt;/footer&gt;
-</div>
+            <h3>Buenas prácticas</h3>
+            <ul>
+                <li>Incluir información de contacto o derechos.</li>
+            </ul>
 
-<h3>Ejemplo</h3>
-<div class="ejemplo">
-<footer>Pie</footer>
-</div>
+        </section>
 
-<p>Contiene información final.</p>
+    </main>
 
-<h3>Buenas prácticas</h3>
-<ul>
-Incluir información de contacto o derechos.
-</ul>
+    <script src="/js/ejemplo.js"></script>
 
-</section>
-
-<script src="/js/ejemplo.js"></script>
-
-</main>
 </body>
+
 </html>

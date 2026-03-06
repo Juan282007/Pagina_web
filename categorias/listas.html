@@ -1,176 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Listas</title>
-<link rel="stylesheet" href="../css/estilos.css">
+    <meta charset="UTF-8">
+    <title>Listas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
 
 <header class="navbar">
-<div class="logo">
-<h1>Blog Educativo de Etiquetas HTML</h1>
 
-<nav>
+    <div class="logo">
+        <h1>Blog Educativo de Etiquetas HTML</h1>
+    </div>
 
-<ul>
-
-<li><a href="../index.html">Inicio</a></li>
-
-<li><a href="estructurales.html">Estructurales</a></li>
-<li><a href="texto.html">Texto</a></li>
-<li><a href="listas.html">Listas</a></li>
-<li><a href="formularios.html">Formularios</a></li>
-<li><a href="tablas.html">Tablas</a></li>
-<li><a href="multimedia.html">Multimedia</a></li>
-
-</ul>
-
-</nav>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="estructurales.html">Estructurales</a></li>
+            <li><a href="texto.html">Texto</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="formularios.html">Formularios</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+        </ul>
+    </nav>
 
 </header>
 
 <main>
 
 <section>
-<h2>ul</h2>
-<ul>Lista desordenada (viñetas)</ul>
 
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;ul&gt;
-&lt;li&gt;Elemento&lt;/li&gt;
-&lt;/ul&gt;
-</div>
+    <h2>ul</h2>
+    <p>Lista desordenada (viñetas).</p>
 
-<h3>Ejemplo práctico funcional</h3>
-<div class="ejemplo">
-<ul>
-    <li>Manzana</li>
-    <li>Banana</li>
-    <li>Naranja</li>
-</ul>
-</div>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Elemento&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </div>
 
-<p>Uso correcto: agrupar elementos sin un orden específico</p>
+    <h3>Ejemplo práctico funcional</h3>
+    <div class="ejemplo">
+        <ul>
+            <li>Manzana</li>
+            <li>Banana</li>
+            <li>Naranja</li>
+        </ul>
+    </div>
+
+    <p>Uso correcto: agrupar elementos sin un orden específico.</p>
+
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Siempre debe contener elementos li.</li>
+        <li>No usar para diseño visual.</li>
+    </ul>
+
 </section>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Siempre debe contener elementos li.</li>
-<li>No usar para diseño visual.</li>
-</ul>
 
 <section>
-<h2>ol</h2>
-<ul>Lista ordenada (numerada)</ul>
 
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;ol&gt;
-&lt;li&gt;Elemento&lt;/li&gt;
-&lt;/ol&gt;
-</div>
+    <h2>ol</h2>
+    <p>Lista ordenada (numerada).</p>
 
-<h3>Ejemplo práctico funcional</h3>
-<div class="ejemplo">
-<ol>
-    <li>Paso 1</li>
-    <li>Paso 2</li>
-    <li>Paso 3</li>
-</ol>
-</div>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Elemento&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </div>
 
-<p>Uso correcto: cuando el orden de los elementos es importante</p>
+    <h3>Ejemplo práctico funcional</h3>
+    <div class="ejemplo">
+        <ol>
+            <li>Paso 1</li>
+            <li>Paso 2</li>
+            <li>Paso 3</li>
+        </ol>
+    </div>
+
+    <p>Uso correcto: cuando el orden de los elementos es importante.</p>
+
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usarla solo cuando el orden tenga significado.</li>
+    </ul>
+
 </section>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Usarla solo cuando el orden tenga significado.</li>
-</ul>
 
 <section>
-<h2>li</h2>
-<ul>Elemento de lista (ul, ol o dl)</ul>
 
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;li&gt;Elemento&lt;/li&gt;
-</div>
+    <h2>li</h2>
+    <p>Elemento de lista utilizado dentro de ul u ol.</p>
 
-<h3>Ejemplo práctico funcional</h3>
-<div class="ejemplo">
-<ul>
-    <li>Elemento de lista</li>
-</ul>
-</div>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;li&gt;Elemento&lt;/li&gt;
+    </div>
 
-<p>Uso correcto: siempre dentro de ul, ol o dl</p>
+    <h3>Ejemplo práctico funcional</h3>
+    <div class="ejemplo">
+        <ul>
+            <li>Elemento de lista</li>
+        </ul>
+    </div>
+
+    <p>Uso correcto: siempre dentro de ul u ol.</p>
+
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>No usar fuera de una lista.</li>
+    </ul>
+
 </section>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>No usar fuera de una lista.</li>
-</ul>
 
 <section>
-<h2>dl</h2>
-<ul>Lista de definiciones</ul>
 
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;dl&gt;
-&lt;dt&gt;Término&lt;/dt&gt;
-&lt;dd&gt;Descripción&lt;/dd&gt;
-&lt;/dl&gt;
-</div>
+    <h2>dl</h2>
+    <p>Lista de definiciones.</p>
 
-<h3>Ejemplo práctico</h3>
-<div class="ejemplo">
-<dl>
-    <dt>HTML</dt>
-    <dd>Lenguaje de marcado</dd>
-    <dt>CSS</dt>
-    <dd>Estilos de página web</dd>
-</dl>
-</div>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;dl&gt;<br>
+        &nbsp;&nbsp;&lt;dt&gt;Término&lt;/dt&gt;<br>
+        &nbsp;&nbsp;&lt;dd&gt;Descripción&lt;/dd&gt;<br>
+        &lt;/dl&gt;
+    </div>
 
-<p>Uso correcto: agrupar términos y sus definiciones</p>
+    <h3>Ejemplo práctico</h3>
+    <div class="ejemplo">
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado</dd>
+
+            <dt>CSS</dt>
+            <dd>Estilos de página web</dd>
+        </dl>
+    </div>
+
+    <p>Uso correcto: agrupar términos y sus definiciones.</p>
+
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>Usar solo para términos y definiciones reales.</li>
+    </ul>
+
 </section>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>Usar solo para términos y definiciones reales.</li>
-</ul>
 
 <section>
-<h2>dt</h2>
-<ul>Representa el término dentro de una lista de definiciones</ul>
 
-<h3>Sintaxis básica</h3>
-<div class="ejemplo">
-&lt;dt&gt;Término&lt;/dt&gt;
-</div>
+    <h2>dt</h2>
+    <p>Representa el término dentro de una lista de definiciones.</p>
 
-<h3>Ejemplo práctico funcional</h3>
-<div class="ejemplo">
-<dl>
-    <dt>HTML</dt>
-    <dd>Lenguaje de marcado</dd>
-</dl>
-</div>
+    <h3>Sintaxis básica</h3>
+    <div class="ejemplo">
+        &lt;dt&gt;Término&lt;/dt&gt;
+    </div>
 
-<p>Uso correcto: siempre junto con dd dentro de dl</p>
+    <h3>Ejemplo práctico funcional</h3>
+    <div class="ejemplo">
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado</dd>
+        </dl>
+    </div>
+
+    <p>Uso correcto: siempre dentro de dl junto con dd.</p>
+
+    <h3>Buenas prácticas</h3>
+    <ul>
+        <li>No usar fuera de dl.</li>
+    </ul>
+
 </section>
-
-<h3>Buenas prácticas</h3>
-<ul>
-<li>No usar fuera de dl.</li>
-</ul>
 
 </main>
+
+<footer>
+    <p>Proyecto educativo SENA - 2026</p>
+</footer>
 
 <script src="/js/ejemplo.js"></script>
 
 </body>
+
 </html>
