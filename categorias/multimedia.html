@@ -10,12 +10,14 @@
 
 <body>
 
+<!-- Barra de navegación principal del sitio -->
 <header class="navbar">
     <div class="logo">
         <h1>Blog Educativo de Etiquetas HTML</h1>
     </div>
     <nav>
         <ul>
+            <!-- Menú de navegación entre las diferentes páginas del blog -->
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="estructurales.html">Estructurales</a></li>
             <li><a href="texto.html">Texto</a></li>
@@ -27,14 +29,9 @@
     </nav>
 </header>
 
-            <h3>Buenas prácticas</h3>
-            <ul>
-                <li>Siempre agregar el atributo alt.</li>
-                <li>Optimizar el tamaño de la imagen para mejorar la carga de la página.</li>
-                <li>Usar formatos compatibles como jpg, png o webp.</li>
-            </ul>
-        </section>
+<main>
 
+<!-- Sección que explica el uso de imágenes -->
 <section>
     <h2>Imagen (img)</h2>
     <p>Permite mostrar una imagen en la página web.</p>
@@ -46,6 +43,8 @@
 
     <h3>Ejemplo práctico</h3>
 <div class="ejemplo">
+
+    <!-- Imagen de ejemplo cargada desde internet -->
     <img 
         src="https://desarrolloweb.com/media/761/imagenes-html.jpg" 
         alt="Imagen de ejemplo" 
@@ -63,6 +62,7 @@
     </ul>
 </section>
 
+<!-- Sección que explica cómo insertar audio -->
 <section>
     <h2>Audio</h2>
     <p>Permite reproducir sonido en la página web.</p>
@@ -76,9 +76,12 @@
 
     <h3>Ejemplo práctico</h3>
     <div class="ejemplo">
+
+        <!-- Reproductor de audio con controles -->
         <audio controls>
             <source src="../media/te-pintaron-pajaritos.mp3" type="audio/mpeg">
         </audio>
+
     </div>
 
     <h3>Explicación</h3>
@@ -92,6 +95,7 @@
     </ul>
 </section>
 
+<!-- Sección que explica la etiqueta video -->
 <section>
     <h2>Video</h2>
     <p>Permite reproducir videos en la página web.</p>
@@ -105,10 +109,12 @@
 
     <h3>Ejemplo práctico</h3>
     <div class="ejemplo">
+
+        <!-- Video de ejemplo almacenado localmente -->
         <video width="250" controls>
-    <source src="../media/Rick_Roll.mp4" type="video/mp4">
-    
-</video>
+            <source src="../media/Rick_Roll.mp4" type="video/mp4">
+        </video>
+
     </div>
 
     <h3>Explicación</h3>
@@ -122,6 +128,7 @@
     </ul>
 </section>
 
+<!-- Sección que explica el uso de iframe -->
 <section>
     <h2>Iframe</h2>
     <p>Permite mostrar otra página o contenido externo dentro del sitio.</p>
@@ -131,8 +138,10 @@
         &lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;
     </div>
 
-   <h3>Ejemplo práctico</h3>
+    <h3>Ejemplo práctico</h3>
 <div class="ejemplo">
+
+    <!-- iframe que muestra otra página dentro del sitio -->
     <iframe 
         src="../Index.html" 
         width="100%" 
@@ -140,6 +149,7 @@
         title="Página de ejemplo"
         style="border:1px solid #ccc; overflow:auto;">
     </iframe>
+
 </div>
 
     <h3>Explicación</h3>
@@ -156,10 +166,12 @@
 
 </main>
 
+<!-- Pie de página del sitio -->
 <footer>
     <p>Proyecto educativo SENA - 2026</p>
 </footer>
 
+<!-- Archivo JavaScript del proyecto -->
 <script src="/js/ejemplo.js"></script>
 
 </body>

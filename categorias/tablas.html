@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+<!-- Configuración básica del documento -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título que aparece en la pestaña del navegador -->
 <title>Tablas</title>
+
+<!-- Archivo de estilos del blog -->
 <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 
 <body>
 
+<!-- Encabezado del blog -->
 <header class="navbar">
+
+    <!-- Título del sitio -->
     <div class="logo">
         <h1>Blog Educativo de Etiquetas HTML</h1>
     </div>
+
+    <!-- Menú de navegación entre páginas -->
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -24,12 +36,16 @@
             <li><a href="multimedia.html">Multimedia</a></li>
         </ul>
     </nav>
+
 </header>
 
 
+<!-- Contenido principal de la página -->
 <main>
 
+<!-- Sección que explica la etiqueta table -->
 <section>
+
     <h2>Contenedor de datos tabulares (table)</h2>
     <p>Elemento que crea una estructura de tabla con filas y columnas.</p>
 
@@ -39,6 +55,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo simple de tabla -->
     <div class="ejemplo">
         <table border="1">
             <tr>
@@ -59,11 +77,14 @@
         <li>Usar thead, tbody y tfoot para estructurar la tabla.</li>
         <li>Evitar atributos de presentación como border, usar CSS en su lugar.</li>
     </ul>
+
 </section>
 
 
 
+<!-- Sección que explica la etiqueta tr -->
 <section>
+
     <h2>Fila de tabla (tr)</h2>
     <p>Elemento que representa una fila dentro de una tabla.</p>
 
@@ -73,6 +94,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo de fila dentro de una tabla -->
     <div class="ejemplo">
         <table border="1">
             <tr>
@@ -87,11 +110,14 @@
         <li>Debe utilizarse dentro de table, thead, tbody o tfoot.</li>
         <li>Asegurarse de que todas las filas tengan el mismo número de celdas por accesibilidad.</li>
     </ul>
+
 </section>
 
 
 
+<!-- Sección que explica la etiqueta td -->
 <section>
+
     <h2>Celda de datos (td)</h2>
     <p>Elemento que contiene información dentro de una tabla.</p>
 
@@ -101,6 +127,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo de celdas dentro de una tabla -->
     <div class="ejemplo">
         <table border="1">
             <tr>
@@ -120,11 +148,14 @@
         <li>Evitar celdas vacías; si es necesario, usar &nbsp;.</li>
         <li>Usar scope en th para accesibilidad.</li>
     </ul>
+
 </section>
 
 
 
+<!-- Sección que explica la etiqueta th -->
 <section>
+
     <h2>Celda de encabezado (th)</h2>
     <p>Elemento que define el título de una columna o fila.</p>
 
@@ -134,6 +165,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo de encabezados de tabla -->
     <div class="ejemplo">
         <table border="1">
             <tr>
@@ -155,11 +188,14 @@
         <li>Agregar scope="col" o scope="row" para accesibilidad.</li>
         <li>Evitar usar th solo por negrita; usar CSS para estilos.</li>
     </ul>
+
 </section>
 
 
 
+<!-- Sección que explica la etiqueta caption -->
 <section>
+
     <h2>Título descriptivo de tabla (caption)</h2>
     <p>Elemento que agrega un título o descripción a la tabla.</p>
 
@@ -169,6 +205,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Tabla con título -->
     <div class="ejemplo">
         <table border="1">
             <caption>Lista de Estudiantes</caption>
@@ -188,9 +226,13 @@
         <li>Colocarlo inmediatamente después de table.</li>
         <li>Describir claramente el contenido de la tabla para usuarios y lectores de pantalla.</li>
     </ul>
+
 </section>
 
+
+<!-- Sección que explica thead -->
 <section>
+
     <h2>Encabezado estructural de tabla (thead)</h2>
     <p>Elemento que agrupa las filas de encabezado de la tabla.</p>
 
@@ -200,6 +242,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo usando thead -->
     <div class="ejemplo">
         <table border="1">
             <thead>
@@ -222,9 +266,13 @@
         <li>Siempre usar thead para separar el encabezado del cuerpo.</li>
         <li>Usar th dentro de thead con scope.</li>
     </ul>
+
 </section>
 
+
+<!-- Sección que explica tbody -->
 <section>
+
     <h2>Cuerpo de la tabla (tbody)</h2>
     <p>Elemento que agrupa las filas con datos principales.</p>
 
@@ -234,6 +282,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo usando tbody -->
     <div class="ejemplo">
         <table border="1">
             <tbody>
@@ -254,9 +304,13 @@
         <li>Separar claramente el cuerpo de los encabezados.</li>
         <li>Usar tbody aunque la tabla no tenga thead para consistencia.</li>
     </ul>
+
 </section>
 
+
+<!-- Sección que explica tfoot -->
 <section>
+
     <h2>Pie de tabla (tfoot)</h2>
     <p>Elemento que define la parte final de la tabla, usualmente para totales o resúmenes.</p>
 
@@ -266,6 +320,8 @@
     </div>
 
     <h3>Ejemplo práctico</h3>
+
+    <!-- Ejemplo de tabla con encabezado, cuerpo y pie -->
     <div class="ejemplo">
         <table border="1">
             <thead>
@@ -274,6 +330,7 @@
                     <th>Precio</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <td>Producto A</td>
@@ -284,6 +341,7 @@
                     <td>$15</td>
                 </tr>
             </tbody>
+
             <tfoot>
                 <tr>
                     <td>Total</td>
@@ -299,14 +357,18 @@
         <li>Colocarlo antes de tbody en HTML si se desea que los navegadores lo rendericen al final.</li>
         <li>Agregar scope y accesibilidad para celdas resumen.</li>
     </ul>
+
 </section>
 
 </main>
 
+
+<!-- Pie de página del sitio -->
 <footer>
     <p>Proyecto educativo SENA - 2026</p>
 </footer>
 
+<!-- Archivo JavaScript del proyecto -->
 <script src="../js/ejemplo.js"></script>
 
 </body>
